@@ -27,6 +27,7 @@ class House
     end
     result
   end
+
   def recite
     (1..12).map { |line_num| line(line_num) }.join("\n")
   end
