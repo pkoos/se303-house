@@ -3,15 +3,16 @@ class House
 
   def initialize
     @lyrics = [
-      'This is the ',
-      'house that Jack built.'
+      'This is ',
+      "the house that Jack built.\n"
     ]
   end
 
   def line(argument)
     case argument
     when 1
-      result = (0..argument).map { |i| @lyrics[i] }.join('') + "\n"
+      # result = (0..argument).map { |i| @lyrics[i] }.join('')
+      result = "#{@lyrics.first}#{@lyrics.last}"
     when 2
       result = "This is the malt that lay in the house that Jack built.\n"
     when 3
