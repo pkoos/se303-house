@@ -1,6 +1,4 @@
 class House
-
-
   def initialize
     @lyrics = [
       'This is ',
@@ -19,8 +17,8 @@ class House
     ]
   end
 
-  def line(argument)
-    "#{@lyrics.first}#{@lyrics.last(argument).join('')}"
+  def line(verses)
+    "#{@lyrics.first}#{@lyrics.last(verses).join('')}"
   end
 
   def recite
