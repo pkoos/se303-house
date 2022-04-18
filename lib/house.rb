@@ -1,15 +1,17 @@
 class House
 
-  @lyrics = [
-    'This is the ',
-    'house that Jack built.\n'
-  ]
+
+  def initialize
+    @lyrics = [
+      'This is the ',
+      'house that Jack built.'
+    ]
+  end
 
   def line(argument)
-
     case argument
     when 1
-      result = "This is the house that Jack built.\n"
+      result = (0..argument).map { |i| @lyrics[i] }.join('') + "\n"
     when 2
       result = "This is the malt that lay in the house that Jack built.\n"
     when 3
