@@ -4,23 +4,18 @@ class House
   def initialize
     @lyrics = [
       'This is ',
-      'the malt that lay in ',
+      'the dog that worried ',
+      'the cat that killed ',
       'the rat that ate ',
+      'the malt that lay in ',
       "the house that Jack built.\n"
     ]
   end
 
   def line(argument)
     case argument
-    when 1
-      # result = (0..argument).map { |i| @lyrics[i] }.join('')
-      result = "#{@lyrics.first}#{@lyrics.last}"
-    when 2..3
-      result = "#{@lyrics.first}#{(argument - 1).downto(1).map { |i| @lyrics[i] }.join('')}#{@lyrics.last}"
-    when 4
-      result = "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    when 5
-      result = "This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+    when 1..5
+      result = "#{@lyrics.first}#{@lyrics.last(argument).join('')}"
     when 6
       result = "This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     when 7
