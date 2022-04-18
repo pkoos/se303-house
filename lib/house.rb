@@ -1,4 +1,10 @@
 class House
+
+  @lyrics = [
+    'This is the ',
+    'house that Jack built.\n'
+  ]
+
   def line(argument)
 
     case argument
