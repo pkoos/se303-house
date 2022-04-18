@@ -5,6 +5,7 @@ class House
     @lyrics = [
       'This is ',
       'the malt that lay in ',
+      'the rat that ate ',
       "the house that Jack built.\n"
     ]
   end
@@ -14,10 +15,8 @@ class House
     when 1
       # result = (0..argument).map { |i| @lyrics[i] }.join('')
       result = "#{@lyrics.first}#{@lyrics.last}"
-    when 2
-      result = "#{@lyrics.first}#{(argument - 1).downto(argument - 1).map { |i| @lyrics[i] }.join('')}#{@lyrics.last}"
-    when 3
-      result = "This is the rat that ate the malt that lay in the house that Jack built.\n"
+    when 2..3
+      result = "#{@lyrics.first}#{(argument - 1).downto(1).map { |i| @lyrics[i] }.join('')}#{@lyrics.last}"
     when 4
       result = "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     when 5
