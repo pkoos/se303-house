@@ -15,8 +15,8 @@ class House
 						]
 	end
 
-  def line(argument)
-		"This is #{@lyrics.last(argument).join('')}.\n"
+  def line(number)
+		"This is #{@lyrics.last(number).join('')}.\n"
   end
 
   def recite
