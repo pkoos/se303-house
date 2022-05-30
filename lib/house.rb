@@ -1,7 +1,7 @@
 class House
   def line(argument)
 
-		lyrics = ["the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"]
+		lyrics = ["the horse and the hound and the horn that belonged to "]
 
     case argument
     when 1
@@ -24,10 +24,8 @@ class House
       result = "This is the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     when 10
       result = "This is the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    when 11
-      result = "This is #{lyrics.last}"
     else
-      result = "This is the horse and the hound and the horn that belonged to #{lyrics.last}"
+      result = "This is #{lyrics.last(argument % 11).join('')}the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     end
     result
   end
