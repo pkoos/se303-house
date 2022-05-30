@@ -22,10 +22,4 @@ class House
   def recite
     (1..12).map { |line_num| line(line_num) }.join("\n")
   end
-
-	def debug_recite
-		(1..12).map { |line_num| "#{line_num}: " +line(line_num) }.join("\n")
-	end
 end
-
-puts House.new.debug_recite
