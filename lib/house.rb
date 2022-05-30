@@ -14,9 +14,7 @@ class House
 							"the malt that lay in "
 						]
 
-    result = "This is #{lyrics.last(argument - 1).join('')}the house that Jack built.\n"
-
-    result
+		"This is #{lyrics.last(argument - 1).join('')}the house that Jack built.\n"
   end
 
   def recite
