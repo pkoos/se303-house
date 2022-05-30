@@ -7,7 +7,8 @@ class House
 							"the priest all shaven and shorn that married ",
 							"the man all tattered and torn that kissed ",
 							"the maiden all forlorn that milked ",
-							"the cow with the crumpled horn that tossed "
+							"the cow with the crumpled horn that tossed ",
+							"the dog that worried "
 						]
 
     case argument
@@ -17,10 +18,8 @@ class House
       result = "This is the malt that lay in the house that Jack built.\n"
     when 3
       result = "This is the rat that ate the malt that lay in the house that Jack built.\n"
-    when 4
-      result = "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     else
-      result = "This is #{lyrics.last(argument - 5).join('')}the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+      result = "This is #{lyrics.last(argument - 4).join('')}the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     end
     result
   end
