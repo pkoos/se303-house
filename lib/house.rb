@@ -10,11 +10,13 @@ class House
 							"the dog that worried ",
 							"the cat that killed ",
 							"the rat that ate ",
-							"the malt that lay in "
+							"the malt that lay in ",
+							"the house that Jack built"
 						]
 	end
+
   def line(argument)
-		"This is #{@lyrics.last(argument - 1).join('')}the house that Jack built.\n"
+		"This is #{@lyrics.last(argument).join('')}.\n"
   end
 
   def recite
