@@ -1,7 +1,6 @@
 class House
   def line(number)
 		HouseVerse.new(number).line
-
   end
 
   def recite
@@ -10,9 +9,19 @@ class House
 end
 
 class HouseVerse
-	def initialize(number)
+	def initialize(number, lyrics = HouseLyrics.lyrics)
 		@number = number
-		@lyrics = ["the horse and the hound and the horn that belonged to ",
+		@lyrics = lyrics
+	end
+
+	def line
+		"This is #{@lyrics.last(@number).join('')}.\n"
+	end
+end
+
+class HouseLyrics
+	def self.lyrics
+		["the horse and the hound and the horn that belonged to ",
 		"the farmer sowing his corn that kept ",
 		"the rooster that crowed in the morn that woke ",
 		"the priest all shaven and shorn that married ",
@@ -25,9 +34,5 @@ class HouseVerse
 		"the malt that lay in ",
 		"the house that Jack built"
 	]
-	end
-
-	def line
-		"This is #{@lyrics.last(@number).join('')}.\n"
 	end
 end
