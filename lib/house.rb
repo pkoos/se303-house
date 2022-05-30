@@ -1,7 +1,6 @@
 class House
-  def line(argument)
-
-		lyrics = ["the horse and the hound and the horn that belonged to ",
+	def initialize
+		@lyrics = ["the horse and the hound and the horn that belonged to ",
 							"the farmer sowing his corn that kept ",
 							"the rooster that crowed in the morn that woke ",
 							"the priest all shaven and shorn that married ",
@@ -13,8 +12,9 @@ class House
 							"the rat that ate ",
 							"the malt that lay in "
 						]
-
-		"This is #{lyrics.last(argument - 1).join('')}the house that Jack built.\n"
+	end
+  def line(argument)
+		"This is #{@lyrics.last(argument - 1).join('')}the house that Jack built.\n"
   end
 
   def recite
