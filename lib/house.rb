@@ -9,16 +9,15 @@ class House
 							"the maiden all forlorn that milked ",
 							"the cow with the crumpled horn that tossed ",
 							"the dog that worried ",
-							"the cat that killed "
+							"the cat that killed ",
+							"the rat that ate "
 						]
 
     case argument
     when 1
       result = "This is the house that Jack built.\n"
-    when 2
-      result = "This is the malt that lay in the house that Jack built.\n"
     else
-      result = "This is #{lyrics.last(argument - 3).join('')}the rat that ate the malt that lay in the house that Jack built.\n"
+      result = "This is #{lyrics.last(argument - 2).join('')}the malt that lay in the house that Jack built.\n"
     end
     result
   end
