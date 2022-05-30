@@ -1,5 +1,5 @@
 class House
-	def initialize
+	def initialize(verses = :FIXME)
 		@lyrics = ["the horse and the hound and the horn that belonged to ",
 							"the farmer sowing his corn that kept ",
 							"the rooster that crowed in the morn that woke ",
