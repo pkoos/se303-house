@@ -21,14 +21,16 @@ class BaseHouseVerse
 		@lyrics = lyrics
 	end
 
-
-end
-
-class HouseVerse < BaseHouseVerse
 	def line
 		"#{introduction} #{lyrics.last(number).join('')}.\n"
 	end
 
+	def introduction
+	end
+
+end
+
+class HouseVerse < BaseHouseVerse
 	def introduction
 		"This is"
 	end
