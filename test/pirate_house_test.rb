@@ -4,9 +4,8 @@ require_relative '../lib/house'
 
 class PirateHouseTest < Minitest::Test
 	def test_line_1
-		skip
 		expected = "Thar be the house that Jack built.\n"
-    assert_equal expected, House.new.line(1)
+    assert_equal expected, House.new(PirateVerse).line(1)
 	end
 
 	def test_line_2
