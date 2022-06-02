@@ -27,6 +27,7 @@ class Verse
 	end
 
 	def introduction
+		raise NoMethodError("Implement method in subclasses")
 	end
 
 end
