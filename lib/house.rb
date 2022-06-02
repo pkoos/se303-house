@@ -1,7 +1,8 @@
 class House
-	attr_reader :verse
-	def initialize(verse = HouseVerse)
+	attr_reader :verse, :number
+	def initialize(verse = HouseVerse, number = :FIXME)
 		@verse = verse
+		@number = number
 	end
 
   def line(number)
@@ -13,7 +14,7 @@ class House
   end
 end
 
-class BaseHouseVerse
+class Verse
 	attr_reader :number, :lyrics
 
 	def initialize(number, lyrics=HouseLyrics.lyrics)
@@ -30,7 +31,7 @@ class BaseHouseVerse
 
 end
 
-class HouseVerse < BaseHouseVerse
+class HouseVerse < Verse
 	def introduction
 		"This is"
 	end
