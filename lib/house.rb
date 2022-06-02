@@ -3,6 +3,7 @@ class House
 	def initialize(verse = HouseVerse)
 		@verse = verse
 	end
+
   def line(number)
 		verse.new(number).line
   end
@@ -10,6 +11,16 @@ class House
   def recite
     (1..12).map { |line_num| line(line_num) }.join("\n")
   end
+end
+
+class BaseHouseVerse
+	attr_reader :number, :lyrics
+	def initialize(number, lyrics)
+		@number = number
+		@lyrics = lyrics
+	end
+
+
 end
 
 class HouseVerse
