@@ -15,6 +15,7 @@ end
 
 class BaseHouseVerse
 	attr_reader :number, :lyrics
+
 	def initialize(number, lyrics)
 		@number = number
 		@lyrics = lyrics
@@ -23,14 +24,14 @@ class BaseHouseVerse
 
 end
 
-class HouseVerse
+class HouseVerse < BaseHouseVerse
 	def initialize(number, lyrics = HouseLyrics.lyrics)
 		@number = number
 		@lyrics = lyrics
 	end
 
 	def line
-		"This is #{@lyrics.last(@number).join('')}.\n"
+		"This is #{lyrics.last(number).join('')}.\n"
 	end
 end
 
