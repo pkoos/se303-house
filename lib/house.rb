@@ -1,6 +1,10 @@
 class House
+	attr_reader :verse
+	def initialize(verse = HouseVerse)
+		@verse = verse
+	end
   def line(number)
-		HouseVerse.new(number).line
+		verse.new(number).line
   end
 
   def recite
