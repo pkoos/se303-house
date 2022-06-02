@@ -5,7 +5,7 @@ require_relative '../lib/house'
 class HouseTest < Minitest::Test
   def test_line_1
     expected = "This is the house that Jack built.\n"
-    assert_equal expected, House.new.line(1)
+    assert_equal expected, House.new(HouseVerse, 1).line(1)
   end
 
   def test_line_2

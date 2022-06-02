@@ -37,6 +37,12 @@ class HouseVerse < Verse
 	end
 end
 
+class PirateVerse < Verse
+	def introduction
+		"Thar be"
+	end
+end
+
 class HouseLyrics
 	def self.lyrics
 		["the horse and the hound and the horn that belonged to ",
