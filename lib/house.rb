@@ -26,7 +26,11 @@ end
 
 class HouseVerse < BaseHouseVerse
 	def line
-		"This is #{lyrics.last(number).join('')}.\n"
+		"#{introduction} #{lyrics.last(number).join('')}.\n"
+	end
+
+	def introduction
+		"This is"
 	end
 end
 
