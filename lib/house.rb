@@ -55,6 +55,13 @@ class RandomHouseVerse < HouseVerse
 	end
 end
 
+class RandomPirateVerse < PirateVerse
+	def initialize(number, lyrics=RandomLyrics.lyrics)
+		super
+		@lyrics = RandomLyrics.lyrics
+	end
+end
+
 class HouseLyrics
 	def self.lyrics
 		["the horse and the hound and the horn that belonged to ",
