@@ -1,8 +1,12 @@
 class House
 	attr_reader :verse, :number
-	def initialize(verse = HouseVerse, number = :FIXME)
+	def initialize(verse = HouseVerse)
 		@verse = verse
 		@number = number
+	end
+
+	def self.for(verse_type, number)
+		House.new(verse_type).line(number)
 	end
 
   def line(number)
