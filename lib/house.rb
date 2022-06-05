@@ -21,13 +21,17 @@ end
 class Verse
 	attr_reader :number, :lyrics
 
-	def initialize(number, lyrics=HouseLyrics.lyrics)
+	def initialize(number, lyrics=HouseLyrics)
 		@number = number
 		@lyrics = lyrics
 	end
 
 	def line
-		"#{introduction} #{lyrics.last(number).join('')}.\n"
+		result = "#{introduction} "
+		lyrics.subject.last(number).zip(lyrics.verb.last(number)).each {
+			|subject, verb| result << "the #{subject} that #{verb}"
+		}
+		result << ".\n"
 	end
 
 	def introduction
@@ -63,37 +67,73 @@ class RandomPirateVerse < PirateVerse
 end
 
 class HouseLyrics
-	def self.lyrics
-		["the horse and the hound and the horn that belonged to ",
-		"the farmer sowing his corn that kept ",
-		"the rooster that crowed in the morn that woke ",
-		"the priest all shaven and shorn that married ",
-		"the man all tattered and torn that kissed ",
-		"the maiden all forlorn that milked ",
-		"the cow with the crumpled horn that tossed ",
-		"the dog that worried ",
-		"the cat that killed ",
-		"the rat that ate ",
-		"the malt that lay in ",
-		"the house that Jack built"
-	]
+	def self.subject
+		[
+			"horse and the hound and the horn",
+			"farmer sowing his corn",
+			"rooster that crowed in the morn",
+			"priest all shaven and shorn",
+			"man all tattered and torn",
+			"maiden all forlorn",
+			"cow with the crumpled horn",
+			"dog",
+			"cat",
+			"rat",
+			"malt",
+			"house"
+		]
+	end
+
+	def self.verb
+		[
+			"belonged to ",
+			"kept ",
+			"woke ",
+			"married ",
+			"kissed ",
+			"milked ",
+			"tossed ",
+			"worried ",
+			"killed ",
+			"ate ",
+			"lay in ",
+			"Jack built"
+		]
 	end
 end
 
 class RandomLyrics
-	def self.lyrics
-		["the horse and the hound and the horn that belonged to ",
-		"the farmer sowing his corn that kept ",
-		"the rooster that crowed in the morn that woke ",
-		"the priest all shaven and shorn that married ",
-		"the man all tattered and torn that kissed ",
-		"the maiden all forlorn that milked ",
-		"the cow with the crumpled horn that tossed ",
-		"the dog that worried ",
-		"the cat that killed ",
-		"the rat that ate ",
-		"the malt that lay in ",
-		"the house that Jack built"
-	].shuffle(random: Random.new(529821882))
+	def self.subject
+		[
+			"horse and the hound and the horn",
+			"farmer sewing his corn",
+			"rooster that crowed in the morn",
+			"priest all shaven and shorn",
+			"man all tattered and torn",
+			"maiden all forlorn",
+			"cow with the crumpled horn",
+			"dog",
+			"cat",
+			"rat",
+			"malt",
+			"house"
+		].shuffle(random: Random.new(529821882))
+	end
+
+	def self.verb
+		[
+			"belonged to ",
+			"kept ",
+			"woke ",
+			"married ",
+			"kissed ",
+			"milked ",
+			"tossed ",
+			"worried ",
+			"killed ",
+			"ate ",
+			"lay in ",
+			"Jack built"
+		].shuffle(random: Random.new(529821882))
 	end
 end
