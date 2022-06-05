@@ -53,16 +53,16 @@ class PirateVerse < Verse
 end
 
 class RandomHouseVerse < HouseVerse
-	def initialize(number, lyrics=RandomLyrics.lyrics)
+	def initialize(number, lyrics=RandomLyrics)
 		super
-		@lyrics = RandomLyrics.lyrics
+		@lyrics = RandomLyrics
 	end
 end
 
 class RandomPirateVerse < PirateVerse
-	def initialize(number, lyrics=RandomLyrics.lyrics)
+	def initialize(number, lyrics=RandomLyrics)
 		super
-		@lyrics = RandomLyrics.lyrics
+		@lyrics = RandomLyrics
 	end
 end
 
@@ -106,7 +106,7 @@ class RandomLyrics
 	def self.subject
 		[
 			"horse and the hound and the horn",
-			"farmer sewing his corn",
+			"farmer sowing his corn",
 			"rooster that crowed in the morn",
 			"priest all shaven and shorn",
 			"man all tattered and torn",

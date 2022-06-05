@@ -1,0 +1,161 @@
+Run options: --seed 4008
+
+# Running:
+
+FFFF.FFFFFFFF
+
+Finished in 0.023203s, 560.2816 runs/s, 560.2816 assertions/s.
+
+  1) Failure:
+RandomHouseTest#test_line_12 [test/random_house_test.rb:58]:
+--- expected
++++ actual
+@@ -1,2 +1,2 @@
+-"This is the man all tattered and torn that kissed the farmer sowing his corn that kept the cow with the crumpled horn that tossed the dog that worried the horse and the hound and the horn that belonged to the rat that ate the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++"This is the man all tattered and torn that belonged to the farmer sowing his corn that woke the cow with the crumpled horn that kissed the dog that tossed the horse and the hound and the horn that married the rat that lay in the maiden all forlorn that milked the malt that worried the rooster that crowed in the morn that killed the cat that ate the priest all shaven and shorn that kept the house that Jack built.
+ "
+
+
+  2) Failure:
+RandomHouseTest#test_line_3 [test/random_house_test.rb:22]:
+--- expected
++++ actual
+@@ -1,2 +1,2 @@
+-"This is the cat that killed the priest all shaven and shorn that married the house that Jack built.
++"This is the cat that ate the priest all shaven and shorn that kept the house that Jack built.
+ "
+
+
+  3) Failure:
+RandomHouseTest#test_line_4 [test/random_house_test.rb:26]:
+--- expected
++++ actual
+@@ -1,2 +1,2 @@
+-"This is the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++"This is the rooster that crowed in the morn that killed the cat that ate the priest all shaven and shorn that kept the house that Jack built.
+ "
+
+
+  4) Failure:
+RandomHouseTest#test_line_9 [test/random_house_test.rb:46]:
+--- expected
++++ actual
+@@ -1,2 +1,2 @@
+-"This is the dog that worried the horse and the hound and the horn that belonged to the rat that ate the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++"This is the dog that tossed the horse and the hound and the horn that married the rat that lay in the maiden all forlorn that milked the malt that worried the rooster that crowed in the morn that killed the cat that ate the priest all shaven and shorn that kept the house that Jack built.
+ "
+
+
+  5) Failure:
+RandomHouseTest#test_line_11 [test/random_house_test.rb:54]:
+--- expected
++++ actual
+@@ -1,2 +1,2 @@
+-"This is the farmer sowing his corn that kept the cow with the crumpled horn that tossed the dog that worried the horse and the hound and the horn that belonged to the rat that ate the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++"This is the farmer sowing his corn that woke the cow with the crumpled horn that kissed the dog that tossed the horse and the hound and the horn that married the rat that lay in the maiden all forlorn that milked the malt that worried the rooster that crowed in the morn that killed the cat that ate the priest all shaven and shorn that kept the house that Jack built.
+ "
+
+
+  6) Failure:
+RandomHouseTest#test_line_5 [test/random_house_test.rb:30]:
+--- expected
++++ actual
+@@ -1,2 +1,2 @@
+-"This is the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++"This is the malt that worried the rooster that crowed in the morn that killed the cat that ate the priest all shaven and shorn that kept the house that Jack built.
+ "
+
+
+  7) Failure:
+RandomHouseTest#test_line_7 [test/random_house_test.rb:38]:
+--- expected
++++ actual
+@@ -1,2 +1,2 @@
+-"This is the rat that ate the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++"This is the rat that lay in the maiden all forlorn that milked the malt that worried the rooster that crowed in the morn that killed the cat that ate the priest all shaven and shorn that kept the house that Jack built.
+ "
+
+
+  8) Failure:
+RandomHouseTest#test_line_6 [test/random_house_test.rb:34]:
+--- expected
++++ actual
+@@ -1,2 +1,2 @@
+-"This is the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++"This is the maiden all forlorn that milked the malt that worried the rooster that crowed in the morn that killed the cat that ate the priest all shaven and shorn that kept the house that Jack built.
+ "
+
+
+  9) Failure:
+RandomHouseTest#test_line_8 [test/random_house_test.rb:42]:
+--- expected
++++ actual
+@@ -1,2 +1,2 @@
+-"This is the horse and the hound and the horn that belonged to the rat that ate the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++"This is the horse and the hound and the horn that married the rat that lay in the maiden all forlorn that milked the malt that worried the rooster that crowed in the morn that killed the cat that ate the priest all shaven and shorn that kept the house that Jack built.
+ "
+
+
+ 10) Failure:
+RandomHouseTest#test_line_2 [test/random_house_test.rb:18]:
+--- expected
++++ actual
+@@ -1,2 +1,2 @@
+-"This is the priest all shaven and shorn that married the house that Jack built.
++"This is the priest all shaven and shorn that kept the house that Jack built.
+ "
+
+
+ 11) Failure:
+RandomHouseTest#test_all_the_lines [test/random_house_test.rb:87]:
+--- expected
++++ actual
+@@ -1,24 +1,24 @@
+ "This is the house that Jack built.
+ 
+-This is the priest all shaven and shorn that married the house that Jack built.
++This is the maiden all forlorn that worried the house that Jack built.
+ 
+-This is the cat that killed the priest all shaven and shorn that married the house that Jack built.
++This is the maiden all forlorn that lay in the farmer sowing his corn that kept the house that Jack built.
+ 
+-This is the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++This is the cow with the crumpled horn that belonged to the rooster that crowed in the morn that woke the maiden all forlorn that ate the house that Jack built.
+ 
+-This is the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++This is the priest all shaven and shorn that worried the maiden all forlorn that milked the man all tattered and torn that tossed the rat that woke the house that Jack built.
+ 
+-This is the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++This is the malt that killed the farmer sowing his corn that tossed the cow with the crumpled horn that belonged to the rat that kissed the cat that ate the house that Jack built.
+ 
+-This is the rat that ate the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++This is the rat that ate the malt that belonged to the dog that worried the rooster that crowed in the morn that woke the cat that milked the man all tattered and torn that married the house that Jack built.
+ 
+-This is the horse and the hound and the horn that belonged to the rat that ate the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++This is the rooster that crowed in the morn that lay in the rat that married the horse and the hound and the horn that kept the farmer sowing his corn that tossed the cow with the crumpled horn that kissed the malt that milked the maiden all forlorn that belonged to the house that Jack built.
+ 
+-This is the dog that worried the horse and the hound and the horn that belonged to the rat that ate the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++This is the farmer sowing his corn that milked the malt that kept the cow with the crumpled horn that kissed the rat that killed the priest all shaven and shorn that married the maiden all forlorn that belonged to the horse and the hound and the horn that worried the cat that tossed the house that Jack built.
+ 
+-This is the cow with the crumpled horn that tossed the dog that worried the horse and the hound and the horn that belonged to the rat that ate the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++This is the malt that kissed the cow with the crumpled horn that ate the maiden all forlorn that worried the dog that lay in the farmer sowing his corn that woke the rat that killed the priest all shaven and shorn that kept the man all tattered and torn that tossed the horse and the hound and the horn that milked the house that Jack built.
+ 
+-This is the farmer sowing his corn that kept the cow with the crumpled horn that tossed the dog that worried the horse and the hound and the horn that belonged to the rat that ate the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++This is the rooster that crowed in the morn that milked the priest all shaven and shorn that ate the malt that belonged to the cow with the crumpled horn that lay in the cat that woke the man all tattered and torn that killed the maiden all forlorn that married the rat that kissed the horse and the hound and the horn that kept the dog that tossed the house that Jack built.
+ 
+-This is the man all tattered and torn that kissed the farmer sowing his corn that kept the cow with the crumpled horn that tossed the dog that worried the horse and the hound and the horn that belonged to the rat that ate the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++This is the maiden all forlorn that married the horse and the hound and the horn that killed the cow with the crumpled horn that worried the rat that kept the farmer sowing his corn that woke the cat that milked the dog that tossed the man all tattered and torn that belonged to the malt that lay in the rooster that crowed in the morn that ate the priest all shaven and shorn that kissed the house that Jack built.
+ "
+
+
+ 12) Failure:
+RandomHouseTest#test_line_10 [test/random_house_test.rb:50]:
+--- expected
++++ actual
+@@ -1,2 +1,2 @@
+-"This is the cow with the crumpled horn that tossed the dog that worried the horse and the hound and the horn that belonged to the rat that ate the maiden all forlorn that milked the malt that lay in the rooster that crowed in the morn that woke the cat that killed the priest all shaven and shorn that married the house that Jack built.
++"This is the cow with the crumpled horn that kissed the dog that tossed the horse and the hound and the horn that married the rat that lay in the maiden all forlorn that milked the malt that worried the rooster that crowed in the morn that killed the cat that ate the priest all shaven and shorn that kept the house that Jack built.
+ "
+
+
+13 runs, 13 assertions, 12 failures, 0 errors, 0 skips
